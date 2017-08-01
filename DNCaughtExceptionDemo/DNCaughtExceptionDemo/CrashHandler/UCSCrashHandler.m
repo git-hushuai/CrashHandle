@@ -31,7 +31,6 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 10;//指明报告�
 + (NSArray*)backtrace
 {
     void *callStack[128];//堆栈方法数组
-    
     /**
      该函数用于获取当前线程的调用堆栈，获取的信息将被存储在buffer中，它是一个指针列表。参数size用来指定buffer中可以保存多少个指针元素。函数返回值是实际获取的指针个数，最大不超过size的大小。
      */
@@ -59,7 +58,6 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 10;//指明报告�
     UIAlertView *alert = [[UIAlertView alloc]initWithTitle:@"抱歉，程序出现了异常" message:message delegate:self cancelButtonTitle:@"退出" otherButtonTitles:nil, nil];
     alert.delegate = self;
     [alert show];
-    
     ///////////////
     CFRunLoopRef runLoop=CFRunLoopGetCurrent();
     CFArrayRef allModes=CFRunLoopCopyAllModes(runLoop);
@@ -134,7 +132,7 @@ void HandleSingal(int singal)
 void InstallUnCaughtExceptionHandler(void)
 {
     NSSetUncaughtExceptionHandler(&HandleUnCaughtException); //设置未捕获的异常处理
-    
+
     // 设置信号类型的异常处理
     signal(SIGABRT, HandleSingal);
     signal(SIGILL, HandleSingal);
