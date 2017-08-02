@@ -140,6 +140,9 @@ void InstallUnCaughtExceptionHandler(void)
     signal(SIGFPE, HandleSingal);
     signal(SIGBUS, HandleSingal);
     signal(SIGPIPE, HandleSingal);
+    signal(SIGHUP, HandleSingal);
+    signal(SIGINT, HandleSingal);
+    signal(SIGQUIT, HandleSingal);
 }
 
 

@@ -13,7 +13,7 @@
     NSString * _Selected;
 }
 @property (retain, nonatomic) IBOutlet UITableView *tableView;
-
+@property (nonatomic ,strong) NSMutableArray *imgArr;
 @end
 
 @implementation ViewController
@@ -27,19 +27,30 @@
                    nil];
     self.tableView.delegate = self;
     self.tableView.dataSource = self;
+    self.imgArr = [NSMutableArray array];
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+    NSLog(@"低内存");
 }
 
+/**
+ 数组越界Crash
+
+ @param sender <#sender description#>
+ */
 - (IBAction)click:(id)sender {
     
     NSArray *arr = [NSArray arrayWithObjects:@"1",@"2", nil];
     NSLog(@"%@",[arr objectAtIndex:3]);
 }
-- (IBAction)click2:(UIButton *)sender {
+
+/**
+ unrecoghtException Selector sent to instance crash
+ */
+- (IBAction)click2{
 
 }
 
@@ -73,6 +84,12 @@
     return cell;
 }
 
+/**
+ 空指针crash
+
+ @param tableView <#tableView description#>
+ @param indexPath <#indexPath description#>
+ */
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     
     NSString * sushiName = [_array objectAtIndex:indexPath.row];
@@ -88,6 +105,46 @@
     
     _Selected = sushiString;
 }
+
+
+
+- (IBAction)click3:(id)sender {
+    for (int i = 0; i<1000000; i++) {
+       UIImage *img = [UIImage imageNamed:@"test.jpg"];
+        [self.imgArr addObject:img];
+    }
+}
+
+-(UIImage *)createQRCodeImageByString:(NSString *)qrString andSize:(CGFloat)imageSize{
+    // Need to convert the string to a UTF-8 encoded NSData object
+    NSData *stringData = [qrString dataUsingEncoding:NSUTF8StringEncoding];
+    // Create the filter
+    CIFilter *qrFilter = [CIFilter filterWithName:@"CIQRCodeGenerator"];
+    // Set the message content and error-correction level
+    [qrFilter setValue:stringData forKey:@"inputMessage"];
+    [qrFilter setValue:@"M" forKey:@"inputCorrectionLevel"];
+    CIImage * image= qrFilter.outputImage;
+    // InterpolatedUIImage
+    CGRect extent = CGRectIntegral(image.extent);
+    CGFloat scale = MIN(imageSize/CGRectGetWidth(extent), imageSize/CGRectGetHeight(extent));
+    // create a bitmap image that we'll draw into a bitmap context at the desired size;
+    size_t width = CGRectGetWidth(extent) * scale;
+    size_t height = CGRectGetHeight(extent) * scale;
+    CGColorSpaceRef cs = CGColorSpaceCreateDeviceGray();
+    CGContextRef bitmapRef = CGBitmapContextCreate(nil, width, height, 8, 0, cs, (CGBitmapInfo)kCGImageAlphaNone);
+    CIContext *context = [CIContext contextWithOptions:nil];
+    CGImageRef bitmapImage = [context createCGImage:image fromRect:extent];
+    CGContextSetInterpolationQuality(bitmapRef, kCGInterpolationNone);
+    CGContextScaleCTM(bitmapRef, scale, scale);
+    CGContextDrawImage(bitmapRef, extent, bitmapImage);
+    // Create an image with the contents of our bitmap
+    CGImageRef scaledImage = CGBitmapContextCreateImage(bitmapRef);
+    // Cleanup
+   // CGContextRelease(bitmapRef);
+ //   CGImageRelease(bitmapImage);
+    return [UIImage imageWithCGImage:scaledImage];
+}
+
 
 - (void)viewDidUnload {
     [_array release];
