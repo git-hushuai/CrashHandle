@@ -15,6 +15,15 @@
 		9B212BC81F20852200BDDEDF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9B212BC61F20852200BDDEDF /* LaunchScreen.storyboard */; };
 		9B212BD21F20878D00BDDEDF /* UCSCrashHandler.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B212BD11F20878D00BDDEDF /* UCSCrashHandler.m */; };
 		9BAAB3471F31C9A000F0C4B4 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAB3461F31C9A000F0C4B4 /* test.jpg */; };
+		9BAAB3541F32BC8300F0C4B4 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAB3491F32BC8300F0C4B4 /* LICENSE */; };
+		9BAAB3551F32BC8300F0C4B4 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAB34A1F32BC8300F0C4B4 /* README.md */; };
+		9BAAB3561F32BC8300F0C4B4 /* encry.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAB34D1F32BC8300F0C4B4 /* encry.c */; };
+		9BAAB3571F32BC8300F0C4B4 /* encry_rsa.c in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAB34F1F32BC8300F0C4B4 /* encry_rsa.c */; };
+		9BAAB3581F32BC8300F0C4B4 /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BAAB3511F32BC8300F0C4B4 /* openssl.framework */; };
+		9BAAB3591F32BC8300F0C4B4 /* UCSEncrypt.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAB3531F32BC8300F0C4B4 /* UCSEncrypt.m */; };
+		9BAAB35E1F32BCC100F0C4B4 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAB35C1F32BCC100F0C4B4 /* GTMBase64.m */; };
+		9BAAB3621F32FF6D00F0C4B4 /* TestViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9BAAB3601F32FF6D00F0C4B4 /* TestViewViewController.m */; };
+		9BAAB3631F32FF6D00F0C4B4 /* TestViewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BAAB3611F32FF6D00F0C4B4 /* TestViewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +40,21 @@
 		9B212BD01F20878D00BDDEDF /* UCSCrashHandler.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSCrashHandler.h; sourceTree = "<group>"; };
 		9B212BD11F20878D00BDDEDF /* UCSCrashHandler.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSCrashHandler.m; sourceTree = "<group>"; };
 		9BAAB3461F31C9A000F0C4B4 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		9BAAB3491F32BC8300F0C4B4 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		9BAAB34A1F32BC8300F0C4B4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		9BAAB34D1F32BC8300F0C4B4 /* encry.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encry.c; sourceTree = "<group>"; };
+		9BAAB34E1F32BC8300F0C4B4 /* encry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encry.h; sourceTree = "<group>"; };
+		9BAAB34F1F32BC8300F0C4B4 /* encry_rsa.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = encry_rsa.c; sourceTree = "<group>"; };
+		9BAAB3501F32BC8300F0C4B4 /* encry_rsa.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = encry_rsa.h; sourceTree = "<group>"; };
+		9BAAB3511F32BC8300F0C4B4 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = openssl.framework; sourceTree = "<group>"; };
+		9BAAB3521F32BC8300F0C4B4 /* UCSEncrypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UCSEncrypt.h; sourceTree = "<group>"; };
+		9BAAB3531F32BC8300F0C4B4 /* UCSEncrypt.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UCSEncrypt.m; sourceTree = "<group>"; };
+		9BAAB35B1F32BCC100F0C4B4 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		9BAAB35C1F32BCC100F0C4B4 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		9BAAB35D1F32BCC100F0C4B4 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		9BAAB35F1F32FF6D00F0C4B4 /* TestViewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TestViewViewController.h; sourceTree = "<group>"; };
+		9BAAB3601F32FF6D00F0C4B4 /* TestViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TestViewViewController.m; sourceTree = "<group>"; };
+		9BAAB3611F32FF6D00F0C4B4 /* TestViewViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestViewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAAB3581F32BC8300F0C4B4 /* openssl.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,11 +88,16 @@
 		9B212BB71F20852100BDDEDF /* DNCaughtExceptionDemo */ = {
 			isa = PBXGroup;
 			children = (
+				9BAAB35A1F32BCC100F0C4B4 /* UCSBase64 */,
+				9BAAB3481F32BC8300F0C4B4 /* UCSEncrypt */,
 				9B212BCF1F20877600BDDEDF /* CrashHandler */,
 				9B212BBB1F20852100BDDEDF /* AppDelegate.h */,
 				9B212BBC1F20852100BDDEDF /* AppDelegate.m */,
 				9B212BBE1F20852200BDDEDF /* ViewController.h */,
 				9B212BBF1F20852200BDDEDF /* ViewController.m */,
+				9BAAB35F1F32FF6D00F0C4B4 /* TestViewViewController.h */,
+				9BAAB3601F32FF6D00F0C4B4 /* TestViewViewController.m */,
+				9BAAB3611F32FF6D00F0C4B4 /* TestViewViewController.xib */,
 				9B212BC11F20852200BDDEDF /* Main.storyboard */,
 				9B212BC41F20852200BDDEDF /* Assets.xcassets */,
 				9B212BC61F20852200BDDEDF /* LaunchScreen.storyboard */,
@@ -93,6 +123,48 @@
 				9BAAB3461F31C9A000F0C4B4 /* test.jpg */,
 			);
 			path = CrashHandler;
+			sourceTree = "<group>";
+		};
+		9BAAB3481F32BC8300F0C4B4 /* UCSEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAB3491F32BC8300F0C4B4 /* LICENSE */,
+				9BAAB34A1F32BC8300F0C4B4 /* README.md */,
+				9BAAB34B1F32BC8300F0C4B4 /* UCSEncrypt */,
+			);
+			path = UCSEncrypt;
+			sourceTree = "<group>";
+		};
+		9BAAB34B1F32BC8300F0C4B4 /* UCSEncrypt */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAB34C1F32BC8300F0C4B4 /* Lib */,
+			);
+			path = UCSEncrypt;
+			sourceTree = "<group>";
+		};
+		9BAAB34C1F32BC8300F0C4B4 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAB34D1F32BC8300F0C4B4 /* encry.c */,
+				9BAAB34E1F32BC8300F0C4B4 /* encry.h */,
+				9BAAB34F1F32BC8300F0C4B4 /* encry_rsa.c */,
+				9BAAB3501F32BC8300F0C4B4 /* encry_rsa.h */,
+				9BAAB3511F32BC8300F0C4B4 /* openssl.framework */,
+				9BAAB3521F32BC8300F0C4B4 /* UCSEncrypt.h */,
+				9BAAB3531F32BC8300F0C4B4 /* UCSEncrypt.m */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		9BAAB35A1F32BCC100F0C4B4 /* UCSBase64 */ = {
+			isa = PBXGroup;
+			children = (
+				9BAAB35B1F32BCC100F0C4B4 /* GTMBase64.h */,
+				9BAAB35C1F32BCC100F0C4B4 /* GTMBase64.m */,
+				9BAAB35D1F32BCC100F0C4B4 /* GTMDefines.h */,
+			);
+			path = UCSBase64;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -155,9 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B212BC81F20852200BDDEDF /* LaunchScreen.storyboard in Resources */,
+				9BAAB3631F32FF6D00F0C4B4 /* TestViewViewController.xib in Resources */,
 				9B212BC51F20852200BDDEDF /* Assets.xcassets in Resources */,
 				9B212BC31F20852200BDDEDF /* Main.storyboard in Resources */,
 				9BAAB3471F31C9A000F0C4B4 /* test.jpg in Resources */,
+				9BAAB3541F32BC8300F0C4B4 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -169,9 +243,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				9B212BC01F20852200BDDEDF /* ViewController.m in Sources */,
+				9BAAB3621F32FF6D00F0C4B4 /* TestViewViewController.m in Sources */,
 				9B212BBD1F20852100BDDEDF /* AppDelegate.m in Sources */,
+				9BAAB3571F32BC8300F0C4B4 /* encry_rsa.c in Sources */,
+				9BAAB3551F32BC8300F0C4B4 /* README.md in Sources */,
+				9BAAB3561F32BC8300F0C4B4 /* encry.c in Sources */,
 				9B212BD21F20878D00BDDEDF /* UCSCrashHandler.m in Sources */,
 				9B212BBA1F20852100BDDEDF /* main.m in Sources */,
+				9BAAB35E1F32BCC100F0C4B4 /* GTMBase64.m in Sources */,
+				9BAAB3591F32BC8300F0C4B4 /* UCSEncrypt.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,6 +373,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = SDXJ5NWBD5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DNCaughtExceptionDemo/UCSEncrypt/UCSEncrypt/Lib",
+				);
 				INFOPLIST_FILE = DNCaughtExceptionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -307,6 +391,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_OBJC_ARC = NO;
 				DEVELOPMENT_TEAM = SDXJ5NWBD5;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/DNCaughtExceptionDemo/UCSEncrypt/UCSEncrypt/Lib",
+				);
 				INFOPLIST_FILE = DNCaughtExceptionDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

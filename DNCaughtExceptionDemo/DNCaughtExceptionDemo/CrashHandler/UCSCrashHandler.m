@@ -72,10 +72,10 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 10;//指明报告�
     // 当点击弹出视图的Cancel按钮哦,isDimissed ＝ YES,上边的循环跳出
     NSSetUncaughtExceptionHandler(NULL);
     signal(SIGABRT, SIG_DFL);
-    signal(SIGILL, SIG_DFL);
+    signal(SIGILL , SIG_DFL);
     signal(SIGSEGV, SIG_DFL);
-    signal(SIGFPE, SIG_DFL);
-    signal(SIGBUS, SIG_DFL);
+    signal(SIGFPE , SIG_DFL);
+    signal(SIGBUS , SIG_DFL);
     signal(SIGPIPE, SIG_DFL);
     
     if ([[exception name] isEqual:UncaughtExceptionHandlerSignalExceptionName])
