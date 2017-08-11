@@ -77,7 +77,9 @@ const NSInteger UncaughtExceptionHandlerReportAddressCount = 10;//指明报告�
     signal(SIGFPE , SIG_DFL);
     signal(SIGBUS , SIG_DFL);
     signal(SIGPIPE, SIG_DFL);
-    
+    signal(SIGHUP , SIG_DFL);
+    signal(SIGINT , SIG_DFL);
+    signal(SIGQUIT, SIG_DFL);
     if ([[exception name] isEqual:UncaughtExceptionHandlerSignalExceptionName])
     {
         kill(getpid(), [[[exception userInfo] objectForKey:UncaughtExceptionHandlerSignalKey] intValue]);

@@ -44,7 +44,7 @@
                                     <constraint firstAttribute="height" constant="38" id="rMT-VH-CTB"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="发放未找到Crash">
+                                <state key="normal" title="方法未找到Crash">
                                     <color key="titleColor" red="0.2470588235" green="0.2470588235" blue="0.2470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
@@ -66,16 +66,10 @@
                                     <action selector="click3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RUU-Rc-07a"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8fa-8Q-aOd">
-                                <rect key="frame" x="23" y="143" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B43-sj-aeg">
                                 <rect key="frame" x="23" y="258" width="91" height="38"/>
                                 <color key="backgroundColor" red="0.7725490196" green="0.60784313729999995" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Button"/>
+                                <state key="normal" title="内存溢出"/>
                                 <connections>
                                     <action selector="click4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kuR-kv-bA2"/>
                                 </connections>
@@ -90,9 +84,7 @@
                             <constraint firstAttribute="trailing" secondItem="Cgh-Eq-EBP" secondAttribute="trailing" id="CWb-yA-oR7"/>
                             <constraint firstItem="B43-sj-aeg" firstAttribute="leading" secondItem="mEh-N9-0E3" secondAttribute="leading" id="HYv-TH-AWa"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Cgh-Eq-EBP" secondAttribute="bottom" id="KfR-4D-KgY"/>
-                            <constraint firstItem="mEh-N9-0E3" firstAttribute="leading" secondItem="8fa-8Q-aOd" secondAttribute="leading" id="OZw-RB-9kH"/>
                             <constraint firstItem="vV2-kB-9Hs" firstAttribute="centerX" secondItem="ab6-v2-HSj" secondAttribute="centerX" id="Vq5-7f-EnM"/>
-                            <constraint firstItem="mEh-N9-0E3" firstAttribute="top" secondItem="8fa-8Q-aOd" secondAttribute="bottom" constant="20" id="brx-EL-XGS"/>
                             <constraint firstItem="B43-sj-aeg" firstAttribute="trailing" secondItem="mEh-N9-0E3" secondAttribute="trailing" id="dU7-sX-IZN"/>
                             <constraint firstItem="ab6-v2-HSj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="120" id="dzG-Tc-mQu"/>
                             <constraint firstItem="vV2-kB-9Hs" firstAttribute="bottom" secondItem="B43-sj-aeg" secondAttribute="bottom" id="eol-eY-xXv"/>
